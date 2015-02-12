@@ -1,17 +1,15 @@
 #!/bin/bash
 
-############################################################
-# Edit this lines to workin on your System
-# Local Systempath to Symfony Repositories
-repospath=~/Documents/Repositories/symfony
+. ~/Develop/Symfony/config.sh
 
-# Define your Variables to create a new Bundle!
-projectname=test 			# Symfony Project Name
-bundlename=Blogerrr				# Bundle Name
-namespace=Xrow			# Bundle Namespace
+# Bundle installer Layout files
+filespath=~/Develop/Symfony/layout
+#  Demo Pages files path
+pagespath=~/Develop/Symfony/pages
+# ViewLayout Resources app path
+layoutView=$repospath/$projectname/src/$namespace/"$bundlename"Bundle/Resources/views/layout.html.twig
 ############################################################
-# run this script from Terminal with $ sh Bundle.sh
-############################################################
+
 # Convert a name to lowercase string
 name() {
 	echo $namespace | awk '{print tolower($0)}'
@@ -25,13 +23,7 @@ bundle() {
 #echo $namespace$bundlename | awk '{print tolower($0)}'
 
 
-# Bundle installer Layout files
-filespath=~/Develop/Symfony/layout
-#  Demo Pages files path
-pagespath=~/Develop/Symfony/pages
-# ViewLayout Resources app path
-layoutView=$repospath/$projectname/src/"$namespace"/"$bundlename"Bundle/Resources/views/layout.html.twig
-############################################################
+# Clear the Trash
 rm -rf ~/.Trash/*
 
 # 1. Check if Symfony Project exists

@@ -1,24 +1,29 @@
 #!/bin/bash
 
+# default views index page
+#/Users/MacBookPro/Documents/Repositories/symfony/test/app/Resources/views/default/index.html.twig
+#/Users/MacBookPro/Documents/Repositories/symfony/test/app/Resources/views/base.html.twig
+curl -o $repospath/$projectname/src/AppBundle/Controller/DefaultController.php https://raw.githubusercontent.com/xmlinc/Symfony/master/layout/jquery/js/jquery.js
+
 # Create a Route for IndexController
-echo "<?php
+#echo "<?php
+#
+#namespace AppBundle\Controller;
+#
+#use Sensio\Bundle\FrameworkExtraBundle\Configuration\Route;
+#use Symfony\Bundle\FrameworkBundle\Controller\Controller;
+#
+#class DefaultController extends Controller
 
-namespace AppBundle\Controller;
-
-use Sensio\Bundle\FrameworkExtraBundle\Configuration\Route;
-use Symfony\Bundle\FrameworkBundle\Controller\Controller;
-
-class DefaultController extends Controller
-{
-	/**
-	 * @Route(\"/\", name=\"homepage\")
-	 */
-	public function indexAction()
-	{
-		return $this->render('default/index.html.twig');
-	}
-}
-" > $repospath/$projectname/src/AppBundle/Controller/DefaultController.php
+# {
+#	/**
+#	 * @Route(\"/app/example\", name=\"homepage\")
+#	 */
+#	public function indexAction()
+#	{
+#		return $this->render('default/index.html.twig');
+#	}
+#}" > $repospath/$projectname/src/AppBundle/Controller/DefaultController.php
 #~/Desktop/test.txt
 
 
@@ -42,5 +47,4 @@ echo '<!DOCTYPE html>
 echo "{% extends 'base.html.twig' %}
 {% block body %}
 	Homepage.
-{% endblock %}
-" > $repospath/$projectname/app/Resources/views/default/index.html.twig
+{% endblock %}" > $repospath/$projectname/app/Resources/views/default/index.html.twig
