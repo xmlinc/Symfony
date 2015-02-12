@@ -7,7 +7,7 @@ repospath=~/Documents/Repositories/symfony
 
 # Define your Variables to create a new Bundle!
 projectname=test 			# Symfony Project Name
-bundlename=Blog				# Bundle Name
+bundlename=Blogerrr				# Bundle Name
 namespace=Xrow			# Bundle Namespace
 ############################################################
 # run this script from Terminal with $ sh Bundle.sh
@@ -131,7 +131,7 @@ fi
 
 
 # 6. Create default Twig Layout
-. $filespath/$layout.sh
+. $filespath/$layout/$layout.sh
 
 
 # 7. Create main.css file
