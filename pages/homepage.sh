@@ -3,7 +3,7 @@
 # default views index page
 #/Users/MacBookPro/Documents/Repositories/symfony/test/app/Resources/views/default/index.html.twig
 #/Users/MacBookPro/Documents/Repositories/symfony/test/app/Resources/views/base.html.twig
-curl -o $repospath/$projectname/src/AppBundle/Controller/DefaultController.php https://github.com/xmlinc/Symfony/raw/master/controller/DefaultController.php
+curl -o $repospath/$projectname/src/AppBundle/Controller/DefaultController.php https://raw.githubusercontent.com/xmlinc/Symfony/master/controller/DefaultController.php
 
 # Create a Route for IndexController
 #echo "<?php
