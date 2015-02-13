@@ -1,6 +1,8 @@
 # Symfony Automator
 
-Create new Symfony Projects, Bundles, Controller, Routes with a one click.
+*Create new Symfony Projects, Bundles, Controller & Routes with a one click.*
+
+Choose between a one-page layout, or websites demo with their subpages.
 
 Choose different layouts to create a demo sites:
 
@@ -9,4 +11,4 @@ Choose different layouts to create a demo sites:
 - HTML5	
 - Symfony	
 
-Workin on Yosemite OSX
+Works on Mac and Linux systems.
