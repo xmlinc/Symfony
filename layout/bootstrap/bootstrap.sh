@@ -34,7 +34,7 @@ echo '<!DOCTYPE html>
 		</div>
 		<div class="navbar-collapse collapse">
 			<ul class="nav navbar-nav">
-			<li><a href="#">Home</a></li>
+			<li><a href="/">Home</a></li>
 			<li><a href="#">Page 1</a></li>
 			<li><a href="#">Page 2</a></li>
 			<li><a href="#">Kontakt</a></li>
@@ -49,7 +49,7 @@ echo '<!DOCTYPE html>
 	<h1>'$namespace' '$bundlename'!</h1>
 	<p>Made with Symfony2 and Bootstrap Framework</p>
 	</div>
-	
+
 	<div class="row">
 		<div class="col-md-12">
 			<!--Body content-->
@@ -60,7 +60,7 @@ echo '<!DOCTYPE html>
 </div>
 
 {% block javascripts %}
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+<script src="{{ asset("bundles/'$(name)$(bundle)'/js/jquery.min.js") }}" type="text/javascript"></script>
 <script src="{{ asset("bundles/'$(name)$(bundle)'/js/bootstrap.min.js") }}" type="text/javascript"></script>
 {% endblock %}
 

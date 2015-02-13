@@ -35,7 +35,7 @@ echo '<!DOCTYPE html>
 
 	<div data-role="content" class="jqm-content">
 
-		<p class="message">Nothing to see here folks. <a href="demos/">View the demo center home page &rarr;</a></p>
+		<p class="message">Nothing to see here folks. <a href="/">View the demo center home page &rarr;</a></p>
 
 	</div><!-- /content -->
 

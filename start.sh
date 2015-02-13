@@ -1,3 +1,6 @@
 #!/bin/bash
 
-sh ./create/Bundle.sh
+here=$(pwd)
+#echo $here
+sh $here/create/Bundle.sh
+#sh ./create/Bundle.sh

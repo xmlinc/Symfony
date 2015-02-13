@@ -33,12 +33,12 @@ echo '<!DOCTYPE html>
 	<head>
 		<meta charset="UTF-8" />
 		<title>{% block title %}Welcome!{% endblock %}</title>
-		{% block stylesheets %}{% endblock %}
 		<link rel="icon" type="image/x-icon" href="{{ asset("favicon.ico") }}" />
+		{% block stylesheets %}{% endblock %}
+		{% block javascripts %}{% endblock %}
 	</head>
 	<body>
 		{% block body %}{% endblock %}
-		{% block javascripts %}{% endblock %}
 	</body>
 </html>' > $repospath/$projectname/app/Resources/views/base.html.twig
 
@@ -46,5 +46,6 @@ echo '<!DOCTYPE html>
 # 3. Create index.html.twig
 echo "{% extends 'base.html.twig' %}
 {% block body %}
-	Homepage.
+	<p>Homepage.</p>
+	<a href=\"/"$(bundle)"/\">$bundlename</a>
 {% endblock %}" > $repospath/$projectname/app/Resources/views/default/index.html.twig

@@ -13,7 +13,7 @@ repospath=~/Documents/Repositories/symfony
 projectname=test
 
 # Project Bundle Name
-bundlename=Blog				
+bundlename=Bloger
 
 # Project Bundle Namespace
 namespace=Xrow

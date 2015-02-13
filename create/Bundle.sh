@@ -1,6 +1,8 @@
 #!/bin/bash
 
-. ~/Develop/Symfony/config.sh
+#. ~/Develop/Symfony/config.sh
+source ./config.sh
+
 
 # Bundle installer Layout files
 filespath=~/Develop/Symfony/layout
@@ -30,7 +32,8 @@ rm -rf ~/.Trash/*
 if [ ! -d $repospath/$projectname ]; then
 	echo 'Ein Symfony Project mit dem Namen "'$projectname'" existiert nicht,'
 	echo 'sollen wir diesen zuerst neu anlegen und Symfony installieren?'
-	echo -n "y/n: "
+	echo "y/n: "
+#	echo -n "y/n: "
 	read pa
 	if [ $pa == y ]; then
 		cd $repospath
@@ -129,8 +132,8 @@ fi
 # 7. Create main.css file
 echo '/* file: web/bundles/'$(name)$(bundle)'/css/main.css */
 body {
-	padding-bottom: 30px;
 	padding-top: 70px;
+	padding-bottom: 30px;
 }' > web/bundles/$(name)$(bundle)/css/main.css
 
 
