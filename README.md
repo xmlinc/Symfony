@@ -16,12 +16,14 @@ Works on Mac and Linux systems.
 
 # Installation and setup
 
-Clone this Project from GitHub to your repository		
+Clone this Project from GitHub to your repository	
+	
 	git clone https://github.com/xmlinc/symfonator.git		
 
 Edit config.sh file with your Symfony workpaths
 
 Run this script with		
+
 	sh start.sh		
 
 
